@@ -1,0 +1,19 @@
+package cn.iverson.demo.mail;
+
+import javax.mail.internet.MimeMessage;
+
+import org.springframework.mail.javamail.JavaMailSender;
+
+public class TestSend {
+	
+	private JavaMailSender sender;
+	
+	void sendMail(){
+		//创建一份邮件
+		MimeMessage mimeMessage = sender.createMimeMessage();
+	}
+
+	public void setSender(JavaMailSender sender) {
+		this.sender = sender;
+	}
+}

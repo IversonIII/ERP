@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>订单管理</title>
+<link rel="stylesheet" type="text/css" href="ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="ui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="css/table.css">
+<script type="text/javascript" src="ui/jquery.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="ui/jquery.serializejson.min.js"></script>
+<script type="text/javascript" src="js/request.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/orders.js"></script>
+</head>
+<body>
+<table id="grid"></table>
+	<div id="ordersDlg" style="padding:2px;">
+		<table class="hovertable">
+			<tr>
+				<td class="bg">流水号</td>
+				<td id="uuid"></td>
+				<td class="bg">供应商</td>
+				<td colspan="3" id="supplierName"></td>
+				<td class="bg">状态</td>
+				<td id="state"></td>
+			</tr>
+			<tr>
+				<td class="bg" width="10%">下单员</td>
+				<td id="createrName" width="15%"></td>
+				<td class="bg" width="10%">审核员</td>
+				<td id="checkerName" width="15%"></td>
+				<td class="bg" width="10%">采购员</td>
+				<td id="starterName" width="15%"></td>
+				<td class="bg" width="10%">仓管员</td>
+				<td id="enderName" width="15%"></td>
+			</tr>
+			<tr>
+				<td class="bg noBorderBottom">下单日期</td>
+				<td id="createtime" class="noBorderBottom"></td>
+				<td class="bg noBorderBottom">审核日期</td>
+				<td id="checktime"  class="noBorderBottom"></td>
+				<td class="bg noBorderBottom">采购日期</td>
+				<td id="starttime"  class="noBorderBottom"></td>
+				<td class="bg noBorderBottom">入库日期</td>
+				<td id="endtime"  class="noBorderBottom"></td>
+			</tr>
+		</table>
+		<!-- 明细表格 -->
+		<table id="itemgrid"></table>
+	</div>
+	<div id="itemDlg" style="padding:4px">
+		<form id="itemForm">
+			<input type="hidden" name="id" id="itemuuid">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+var existEditIndex = -1;
+$(function(){
+	$('#supplier').combogrid({    
+		url:'supplier_list?t1.type='+type,    
+	    idField:'uuid',    
+	    textField:'name',    
+	    columns:[[    
+			{field:'uuid',title:'编号',width:100},
+		    {field:'name',title:'名称',width:100},
+		    {field:'address',title:'联系地址',width:100},
+		    {field:'contact',title:'联系人',width:100},
+		    {field:'tele',title:'联系电话',width:100},
+		    {field:'email',title:'邮件地址',width:100},
+		    {field:'type',title:'类型',width:100}
+	    ]],
+	    panelWidth:710,
+	    fitColumns:true
+	}); 
+	$('#ordersgrid').datagrid({
+		columns:[[
+		  		    {field:'goodsuuid',title:'商品编号',width:100,
+		  		    	editor:{type:'numberbox',options:{
+		  		    		disabled:true
+		  		    	}}},
+		  		    {field:'goodsname',title:'商品名称',width:100,
+		  		    	editor:{type:'combobox',options:{
+		  		    		url:'goods_list',
+		  		    		valueField:'name',
+		  		    		textField:'name',
+		  		    		onSelect:function(record){
+		  		    			//显示价格
+		  		    			var priceEdit=$('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'price'});
+		  		    			$(priceEdit.target).val(record.inprice);
+		  		    			//显示商品ID
+		  		    			var goodsuuidEdit=$('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'goodsuuid'});
+		  		    			$(goodsuuidEdit.target).val(record.uuid);
+		  		    			//自动算出金额
+		  		    			cal();
+		  		    			sum();
+		  		    		}
+		  		    	}}},
+		  		    {field:'price',title:'价格',width:100,
+		  		    	editor:{type:'numberbox',options:{ min:0,precision:2}}},
+		  		    {field:'num',title:'数量',width:100,editor:'numberbox'},
+		  		    {field:'money',title:'金额',width:100,
+		  		    	editor:{type:'numberbox',options:{ min:0,precision:2,disabled:true}}},
+					{field:'-',title:'操作',width:200,formatter: function(value,row,index){
+						if(row.num == '合计'){
+							return '';
+						}
+						return ' <a href="javascript:void(0)" onclick="deleteRow(' + index + ')">删除</a>';
+					}}
+				]],
+		 		singleSelect:true,
+		 		showFooter:true,
+		 		toolbar:[{
+					text:'添加',
+					iconCls:'icon-add',
+					handler:function(){
+						if(existEditIndex > -1){
+							$('#ordersgrid').datagrid('endEdit',existEditIndex);
+						}
+						$('#ordersgrid').datagrid('appendRow',{num:0,money:0.00});
+						existEditIndex = $('#ordersgrid').datagrid('getRows').length-1;
+						$('#ordersgrid').datagrid('beginEdit',existEditIndex);
+						bindGridEvent();
+					}
+				},{
+					text:'保存',
+					iconCls:'icon-save',
+					handler:function(){
+						//结束编辑行,准备提交数据
+						if(existEditIndex > -1){
+							$('#ordersgrid').datagrid('endEdit',existEditIndex);
+						}
+						//定义一个字段来接收值
+						var formdata = $('#orderForm').serializeJSON();
+						//判断是否选择了供货商
+						if(formdata['t.supplieruuid'] == ""){
+							$.messager.alert('提示',"请选择供应商",'info');
+							return;
+						}
+						//将表格的数据转换成json在传到Action
+						formdata['json'] = JSON.stringify($('#ordersgrid').datagrid('getRows'));
+						$.ajax({
+							url:'orders_add?type='+type,
+							type:'post',
+							dataType:'json',
+							data:formdata,
+							success:function(data){
+								if(data.success){
+									//清空所有数据
+									$('#supplier').combogrid('clear');
+									$('#ordersgrid').datagrid("loadData",{total:0,rows:[],footer:[{num:'合计',money:0.00}]});
+									$('#addOrdersDlg').dialog('close');
+									$('grid').datagrid('reload');
+								}
+								$.messager.alert('提示',data.message,'info');
+							}
+						});
+					 }
+				  }],
+		 		onClickRow:function(rowIndex,rowData){
+					$('#ordersgrid').datagrid('endEdit',existEditIndex);
+					existEditIndex = rowIndex;
+					$('#ordersgrid').datagrid('beginEdit',existEditIndex);
+					bindGridEvent();
+				}
+	});
+				$('#ordersgrid').datagrid('reloadFooter',[{
+					num: '合计',
+					money: 0.00
+				}]);
+		//提交订单
+		$('#btnSave').bind('click',function(){
+			//结束编辑行,准备提交数据
+			if(existEditIndex > -1){
+				$('#ordersgrid').datagrid('endEdit',existEditIndex);
+			}
+			//定义一个字段来接收值
+			var formdata = $('#orderForm').serializeJSON();
+			//判断是否选择了供货商
+			if(formdata['t.supplieruuid'] == ""){
+				$.messager.alert('提示',"请选择供应商",'info');
+				return;
+			}
+			//将表格的数据转换成json在传到Action
+			formdata['json'] = JSON.stringify($('#ordersgrid').datagrid('getRows'));
+			$.ajax({
+				url:'orders_add',
+				type:'post',
+				dataType:'json',
+				data:formdata,
+				success:function(data){
+					if(data.success){
+						//清空所有数据
+						$('#supplier').combogrid('clear');
+						$('#ordersgrid').datagrid("loadData",{total:0,rows:[],footer:[{num:'合计',money:0.00}]});
+					}
+						$.messager.alert('提示',data.message);
+				}
+			});
+		});
+});
+
+//计算各种数据
+function cal(){
+	//获取数量编辑框的数值
+	var numEdit=$('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'num'});
+	var num=$(numEdit.target).val();
+	//获取价格编辑框的数值
+	var priceEdit=$('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'price'});
+	var price=$(priceEdit.target).val();
+	//计算总金额
+	var money = (price*num).toFixed(2);
+	//获取金额编辑框
+	var moneyEdit=$('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'money'});
+	$(moneyEdit.target).val(money);
+	$('#ordersgrid').datagrid('getRows')[existEditIndex].money = money;
+}
+function bindGridEvent(){
+	var numEdit = $('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'num'});
+	$(numEdit.target).bind('keyup',function(){
+		cal();
+		sum();
+	});
+	var priceEdit = $('#ordersgrid').datagrid('getEditor',{index:existEditIndex,field:'price'});
+	$(priceEdit.target).bind('keyup',function(){
+		cal();
+		sum();
+	});
+}
+function deleteRow(index){
+	//结束编辑行的方法
+	$('#ordersgrid').datagrid('endEdit',existEditIndex);
+	//删除
+	$('#ordersgrid').datagrid('deleteRow',index);
+	//刷新表格数据,避免删最后一行时空指针异常
+	var tableData = $('#ordersgrid').datagrid('getData');
+	$('#ordersgrid').datagrid('loadData',tableData);
+	sum();
+}
+function sum(){
+	var totalMoney = 0; 
+	var rows = $('#ordersgrid').datagrid('getRows');
+	for(var i = 0;i<rows.length;i++){
+		totalMoney += parseFloat(rows[i].money);
+	}
+	totalMoney = totalMoney.toFixed(2);
+	 $('#ordersgrid').datagrid('reloadFooter',[{num:'合计',money:totalMoney}]);
+}
+
+
+
+

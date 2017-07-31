@@ -1,0 +1,8 @@
+package cn.iverson.test;
+
+public class TestJavaMail {
+	
+	public void testMail(){
+		
+	}
+}

@@ -1,0 +1,17 @@
+package cn.iverson.poi;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class CreateOrderXls {
+
+	/**
+	 * 创建订单表格模板
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//工作簿
+		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+		
+	}
+
+}

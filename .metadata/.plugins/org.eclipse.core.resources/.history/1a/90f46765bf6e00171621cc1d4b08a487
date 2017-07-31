@@ -1,0 +1,30 @@
+$(function(){
+	$('#grid').datagrid({
+		url:'storeoper_listByPage',
+		columns:[[
+	          {field:'uuid',title:'编号',width:100},
+	  		  {field:'empName',title:'操作员',width:100},
+	  		  {field:'opertime',title:'操作日期',width:100},
+	  		  {field:'storeName',title:'仓库',width:100},
+	  		  {field:'goodsuuid',title:'商品',width:100},
+	  		  {field:'num',title:'数量',width:100},
+	  		  {field:'type',title:'1：入库 2：出库',width:100},
+	
+	  		  {field:'-',title:'操作',width:200,formatter: function(value,row,index){
+				var oper = "<a href=\"javascript:void(0)\" onclick=\"edit(" + row.uuid + ')">修改</a>';
+				oper += ' <a href="javascript:void(0)" onclick="del(' + row.uuid + ')">删除</a>';
+				return oper;
+	  		  }}
+		]],
+		singleSelect:true,
+		pagination:true
+	});
+	//点击查询按钮
+	$('#btnSearch').bind('click',function(){
+		//把表单数据转换成json对象
+		var formData = $('#searchForm').serializeJSON();
+		$('#grid').datagrid('load',formData);
+	});
+})
+	
+	

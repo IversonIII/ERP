@@ -1,0 +1,60 @@
+$(function(){
+	$('#grid').datagrid({
+		queryParams:{},
+		columns:[[
+	          {field:'month',title:'月份',width:100},
+	  		  {field:'y',title:'销售额',width:100},
+		]],
+		singleSelect:true,
+	});
+	//点击查询按钮
+	$('#btnSearch').bind('click',function(){
+		//把表单数据转换成json对象
+		var formData = $('#searchForm').serializeJSON();
+		$('#grid').datagrid({
+			url:'report_trendReport',
+			 queryParams:formData
+		})
+		if(formData.endDate != ''){
+			formData.endDate = formData.endDate+" 23:59:59"
+		}
+		$('#grid').datagrid('load',formData);
+	});
+})
+function showChart(){
+	 var monthData = new Array();
+	 for(var i = 1;i <= 12;i++){
+		 monthData.push(i+'月')
+	 }
+	 $('#trendChart').highcharts({
+         chart: {
+             plotBackgroundColor: null,
+             plotBorderWidth: null,
+             plotShadow: false,
+             type: 'pie'
+         },
+         title: {
+             text: '销售统计'
+         },
+         tooltip: {
+             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+         },
+         plotOptions: {
+             pie: {
+                 allowPointSelect: true,
+                 cursor: 'pointer',
+                 dataLabels: {
+                     enabled: true
+                 },
+                 showInLegend: true
+             }
+         },
+         series: [{
+             name: "比例",
+             colorByPoint: true,
+             data:data
+         }]
+     });
+}
+	
+	

@@ -1,0 +1,8 @@
+package cn.iverson.demo.quartz;
+
+public class JobTest {
+	
+	public void JobTest(){
+		
+	}
+}

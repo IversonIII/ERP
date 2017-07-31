@@ -1,0 +1,41 @@
+package cn.iverson.erp.job;
+
+import java.util.List;
+
+import cn.iverson.erp.biz.IStoredetailBiz;
+import cn.iverson.erp.entity.Storealert;
+import cn.iverson.erp.utils.MailUtil;
+
+public class MailJob {
+	
+	private IStoredetailBiz storedetailBiz;
+	private MailUtil mailUtil;
+	private String to;
+	private String subject;
+	private String text;
+	
+	public void doJob(){
+		List<Storealert> storealertList = storedetailBiz.getStorealertList();
+		if(null != storealertList && storealertList.size()>0){
+			
+		}
+	}
+	
+	
+	
+	public void setStoredetailBiz(IStoredetailBiz storedetailBiz) {
+		this.storedetailBiz = storedetailBiz;
+	}
+	public void setMailUtil(MailUtil mailUtil) {
+		this.mailUtil = mailUtil;
+	}
+	public void setTo(String to) {
+		this.to = to;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+}

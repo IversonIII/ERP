@@ -1,0 +1,38 @@
+package cn.iverson.poi;
+
+import java.io.FileOutputStream;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class CreateOrderXls {
+
+	/**
+	 * 创建订单表格模板
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//工作簿
+		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+		//表
+		HSSFSheet hssfSheet = hssfWorkbook.createSheet("采 购 订 单");
+		//内容样式
+		HSSFCellStyle hssfCellStyle = hssfWorkbook.createCellStyle();
+		hssfCellStyle.setBorderBottom(HSSFCellStyle.BORDER_THIN);//下边框
+		hssfCellStyle.setBorderTop(HSSFCellStyle.BORDER_THIN);//上边框
+		hssfCellStyle.setBorderLeft(HSSFCellStyle.BORDER_THIN);//左边框
+		hssfCellStyle.setBorderRight(HSSFCellStyle.BORDER_THIN);//右边框
+		for(int i = 2;i < 12;i++){
+			HSSFRow hssfRow = hssfSheet.createRow(i);
+			for(int j = 0;j < 4;j++){
+				HSSFCell hssfCell = hssfRow.createCell(j);
+				hssfCell.setCellStyle(hssfCellStyle);
+			}
+		}
+		hssfWorkbook.write(new FileOutputStream("采购订单"));
+	}
+
+}

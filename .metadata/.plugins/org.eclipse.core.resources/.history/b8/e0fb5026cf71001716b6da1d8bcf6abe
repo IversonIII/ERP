@@ -1,0 +1,15 @@
+package cn.iverson.poi;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class POIDemo {
+
+	public static void main(String[] args) {
+		
+		//创建一个excel表格
+		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+		//创建一张工作表
+		
+	}
+
+}

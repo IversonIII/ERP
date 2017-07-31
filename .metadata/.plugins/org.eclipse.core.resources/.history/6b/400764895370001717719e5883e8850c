@@ -1,0 +1,12 @@
+package cn.iverson.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestJavaMail {
+	
+	public void testMail(){
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext-mail.xml");
+		
+	}
+}

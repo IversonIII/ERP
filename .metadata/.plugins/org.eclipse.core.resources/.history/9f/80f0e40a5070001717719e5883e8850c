@@ -1,0 +1,12 @@
+package cn.iverson.demo.mail;
+
+import org.springframework.mail.javamail.JavaMailSender;
+
+public class TestSend {
+	
+	private JavaMailSender sender;
+	
+	void sendMail(){
+		
+	}
+}

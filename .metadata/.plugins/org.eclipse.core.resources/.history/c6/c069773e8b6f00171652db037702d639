@@ -1,0 +1,19 @@
+package cn.iverson.erp.biz.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import cn.iverson.erp.biz.IReportBiz;
+
+public class ReportBiz implements IReportBiz {
+	private IReportDao reportDao;
+	@Override
+	public List orderReport(Date startDate, Date endDate) {
+		return null;
+	}
+	public void setReportDao(IReportDao reportDao) {
+		this.reportDao = reportDao;
+	}
+	
+
+}

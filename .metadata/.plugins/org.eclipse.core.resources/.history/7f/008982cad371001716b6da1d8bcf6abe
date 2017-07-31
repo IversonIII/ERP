@@ -1,0 +1,22 @@
+package cn.iverson.erp.action;
+import cn.iverson.erp.biz.ISupplierBiz;
+import cn.iverson.erp.entity.Supplier;
+
+/**
+ * 供应商Action 
+ * @author Administrator
+ *
+ */
+public class SupplierAction extends BaseAction<Supplier> {
+
+	private ISupplierBiz supplierBiz;
+
+	public void setSupplierBiz(ISupplierBiz supplierBiz) {
+		this.supplierBiz = supplierBiz;
+		super.setBaseBiz(this.supplierBiz);
+	}
+	
+	/**
+	 * 导出
+	 */
+}

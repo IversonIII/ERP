@@ -1,0 +1,55 @@
+$(function(){
+	$('#grid').datagrid({
+		url:'storedetail_listByPage',
+		columns:[[
+		    {field:'uuid',title:'编号',width:100},
+		    {field:'storeName',title:'仓库',width:100},
+		    {field:'goodsName',title:'商品名称',width:100},
+		    {field:'num',title:'数量',width:100},
+		]],
+		singleSelect:true,
+		pagination:true,
+		onDblClickRow:function(rowIndex,rowData){
+			$('#storeDlg').dialog('open');
+			//显示仓库名字
+			$('#storeName').html(rowData.storeName);
+			//显示商品名字
+			$('#goodsName').html(rowData.goodsName);
+			//数据表格
+			$('#storegrid').datagrid('loadData',rowData.storedetails)
+		}
+	});
+	//点击查询按钮
+	$('#btnSearch').bind('click',function(){
+		//把表单数据转换成json对象
+		var formData = $('#searchForm').serializeJSON();
+		$('#grid').datagrid('load',formData);
+	});
+	
+	//弹出窗口
+	$('#storeDlg').dialog({
+		title:'仓库变动记录',
+		height:320,
+		width:700,
+		modal:true,
+		closed:true
+	});
+	
+	//库存变动记录表
+	$('#storegrid').datagrid({
+		columns:[[
+				    {field:'uuid',title:'编号',width:100},
+				    {field:'goodsuuid',title:'员工',width:100},
+				    {field:'goodsname',title:'操作日期',width:100},
+				    {field:'goodsname',title:'仓库名称',width:100},
+				    {field:'goodsname',title:'商品名称',width:100},
+				    {field:'num',title:'数量',width:100},
+				    {field:'state',title:'订单状态',width:100},
+				]],
+				fitColumns:true,
+				singleSelect:true,
+				closed:true
+	});
+})
+	
+	

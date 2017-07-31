@@ -1,0 +1,34 @@
+package cn.iverson.erp.dao.impl;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
+
+import cn.iverson.erp.dao.IReportDao;
+
+public class ReportDao extends HibernateDaoSupport implements IReportDao {
+	@Override
+	public List orderReport(Date startDate, Date endDate) {
+		String hql = "select new Map(gt.name as name,sum(od.money)as y)"+
+					 " from Goodstype gt,Goods g,Orders o,Orderdetail od"+
+					 " where g.goodstype=gt and od.orders=o and od.goodsuuid=g.uuid"+
+					 " and o.type='2'";
+		List<Date> queryParams = new ArrayList<Date>();
+		if(null != startDate){
+			hql += " and o.createtime >=" ;
+			queryParams.add(startDate);
+		}
+		if(null != endDate){
+			hql += " and o.ereatetime <=";
+			queryParams.add(endDate);
+		}
+		hql += " group by gt.name"; 
+		if(queryParams.size() > 0){
+			return getHibernateTemplate().find(hql, queryParams.toArray(new Object[]{}));
+		}
+		return getHibernateTemplate().find(hql);
+	}
+
+}

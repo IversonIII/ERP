@@ -1,0 +1,119 @@
+package cn.iverson.erp.biz.impl;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.mail.MessagingException;
+
+import cn.iverson.erp.biz.IStoredetailBiz;
+import cn.iverson.erp.biz.exception.ErpException;
+import cn.iverson.erp.dao.IGoodsDao;
+import cn.iverson.erp.dao.IStoreDao;
+import cn.iverson.erp.dao.IStoredetailDao;
+import cn.iverson.erp.entity.Storealert;
+import cn.iverson.erp.entity.Storedetail;
+import cn.iverson.erp.utils.MailUtil;
+/**
+ * 仓库库存业务逻辑类
+ * @author Administrator
+ *
+ */
+public class StoredetailBiz extends BaseBiz<Storedetail> implements IStoredetailBiz {
+
+	private IStoredetailDao storedetailDao;
+	private IGoodsDao goodsDao;
+	private IStoreDao storeDao;
+	private MailUtil mailUtil;
+	private String to;
+	private String subject;
+	private String text;
+	
+	public void setStoredetailDao(IStoredetailDao storedetailDao) {
+		this.storedetailDao = storedetailDao;
+		super.setBaseDao(this.storedetailDao);
+	}
+	
+	//创建数组存goodsuuid:goodsName值
+	private String getGoodsName(Long uuid,Map<Long,String> goodsNameMap){
+		if(null == uuid){
+			return null;
+		}
+		String goodsName = goodsNameMap.get(uuid);
+		if(null == goodsName){
+			goodsName = goodsDao.get(uuid).getName();
+			goodsNameMap.put(uuid, goodsName);
+		}
+		return goodsName;
+	}
+	
+	//创建数组存storeuuid:storeName值
+	private String getStoreName(Long uuid,Map<Long,String> storeNameMap){
+		if(null == uuid){
+			return null;
+		}
+		String storeName = storeNameMap.get(uuid);
+		if(null == storeName){
+			storeName = storeDao.get(uuid).getName();
+			storeNameMap.put(uuid, storeName);
+		}
+		return storeName;
+	}
+	//分页查询
+	public List<Storedetail> getListByPage(Storedetail t1,Storedetail t2,Object param,int firstResult,int maxResults){
+		List<Storedetail> storedetailList = super.getListByPage(t1, t2, param, firstResult, maxResults);
+		Map<Long,String> goodsNameMap = new HashMap<Long,String>();
+		Map<Long,String> storeNameMap = new HashMap<Long,String>();
+		for(Storedetail sd: storedetailList){
+			sd.setGoodsName(getGoodsName(sd.getGoodsuuid(), goodsNameMap));
+			sd.setStoreName(getStoreName(sd.getStoreuuid(), storeNameMap));
+		}
+		return storedetailList;
+	}
+	
+	@Override
+	public List<Storealert> getStorealertList() {
+		return storedetailDao.getStorealertList();
+	}
+	
+	@Override
+	public void sendStoreAlertMail() throws MessagingException {
+		List<Storealert> storealertList = storedetailDao.getStorealertList();
+		int count = storealertList == null?0:storealertList.size();
+		if(count > 0){
+			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+			mailUtil.sendMail(to, 
+							  subject.replace("[time]",simpleDateFormat.format(new Date())),
+							  text.replace("[count]", String.valueOf(count)));
+		}else{
+			throws new ErpException("没有需要预警的商品");
+		}
+	}
+
+	public void setGoodsDao(IGoodsDao goodsDao) {
+		this.goodsDao = goodsDao;
+	}
+
+	public void setStoreDao(IStoreDao storeDao) {
+		this.storeDao = storeDao;
+	}
+
+	public void setMailUtil(MailUtil mailUtil) {
+		this.mailUtil = mailUtil;
+	}
+
+	public void setTo(String to) {
+		this.to = to;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="122" key="DIALOG_Y_ORIGIN"/>
+		<item value="864" key="DIALOG_X_ORIGIN"/>
+		<item value="400" key="DIALOG_HEIGHT"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="oper" key="selection"/>
+		<list key="findhistory">
+			<item value="Request[&apos;oper&apos;]"/>
+			<item value="&apos;#grid&apos;"/>
+			<item value="grid"/>
+			<item value="editpass"/>
+			<item value="修改"/>
+			<item value="service"/>
+			<item value="设置"/>
+			<item value="showName"/>
+		</list>
+		<list key="replacehistory">
+			<item value="oper"/>
+			<item value="&apos;#ordersgrid&apos;"/>
+			<item value="ordersgrid"/>
+			<item value="t2"/>
+			<item value="t1"/>
+			<item value="T"/>
+			<item value="t"/>
+		</list>
+	</section>
+</section>

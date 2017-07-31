@@ -1,0 +1,71 @@
+$(function(){
+	$('#grid').datagrid({
+		queryParams:{},
+		columns:[[
+	          {field:'month',title:'月份',width:100},
+	  		  {field:'y',title:'销售额',width:100},
+		]],
+		singleSelect:true,
+	});
+	//点击查询按钮
+	$('#btnSearch').bind('click',function(){
+		//把表单数据转换成json对象
+		var formData = $('#searchForm').serializeJSON();
+		$('#grid').datagrid({
+			url:'report_trendReport',
+			 queryParams:formData
+		})
+		if(formData.endDate != ''){
+			formData.endDate = formData.endDate+" 23:59:59"
+		}
+		$('#grid').datagrid('load',formData);
+	});
+})
+function showChart(){
+	 var monthData = new Array();
+	 for(var i = 1;i <= 12;i++){
+		 monthData.push(i+'月');
+	 }
+	 $('#trendChart').highcharts({
+			 title: {
+				 text: $('#year').combobox('getValue')+'年销售趋势分析',
+				 x:-20//center
+			 },
+			 subtitle: {
+		            text: 'Source: www.itcast.com',
+		            x: -20
+		        },
+	        xAxis: {
+	           Categories: monthData,
+	        },
+	        yAxis: {
+	        	title:{
+	        		text:'销售额(元)'
+	        	},
+	            min: 0
+	        },
+	        series: [{
+	            type: 'line',
+	            name: 'Regression Line',
+	            data: [[0, 1.11], [5, 4.51]],
+	            marker: {
+	                enabled: false
+	            },
+	            states: {
+	                hover: {
+	                    lineWidth: 0
+	                }
+	            },
+	            enableMouseTracking: false
+	        }, {
+	            type: 'scatter',
+	            name: 'Observations',
+	            data: [1, 1.5, 2.8, 3.5, 3.9, 4.2],
+	            marker: {
+	                radius: 4
+	            }
+	        }]
+	    });
+}
+	
+	

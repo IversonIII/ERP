@@ -1,0 +1,20 @@
+package cn.iverson.erp.utils;
+
+import org.springframework.mail.javamail.JavaMailSender;
+
+public class MailUtil {
+	
+	private JavaMailSender javaMailSender;
+	private String from;
+	
+	public void sendMail(){
+		
+	}
+	public void setJavaMailSender(JavaMailSender javaMailSender) {
+		this.javaMailSender = javaMailSender;
+	}
+	public void setFrom(String from) {
+		this.from = from;
+	}
+	
+}

@@ -1,0 +1,8 @@
+package cn.iverson.erp.job;
+
+import cn.iverson.erp.biz.IStoredetailBiz;
+
+public class MailJob {
+	
+	private IStoredetailBiz storedetailBiz
+}

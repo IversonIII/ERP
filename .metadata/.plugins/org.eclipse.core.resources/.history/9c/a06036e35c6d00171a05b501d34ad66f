@@ -1,0 +1,48 @@
+package cn.iverson.erp.action;
+import cn.iverson.erp.biz.IOrderdetailBiz;
+import cn.iverson.erp.biz.exception.ErpException;
+import cn.iverson.erp.entity.Emp;
+import cn.iverson.erp.entity.Orderdetail;
+
+/**
+ * 订单明细Action 
+ * @author Administrator
+ *
+ */
+public class OrderdetailAction extends BaseAction<Orderdetail> {
+
+	private IOrderdetailBiz orderdetailBiz;
+	private Long storeuuid;
+
+	public void setOrderdetailBiz(IOrderdetailBiz orderdetailBiz) {
+		this.orderdetailBiz = orderdetailBiz;
+		super.setBaseBiz(this.orderdetailBiz);
+	}
+	
+	public void doInStore(){
+		Emp emp = getUser();
+		if(null == emp){
+			ajaxReturn(false, "还没登陆不可入库");
+			return;
+		}
+		Long a = getId();
+		try {
+			orderdetailBiz.doInStore(getId(), storeuuid, emp.getUuid());
+			ajaxReturn(true, "入库成功");
+		} catch(ErpException e){
+			ajaxReturn(false, e.getMessage());
+		} catch (Exception e) {
+			e.printStackTrace();
+			ajaxReturn(false, "入库异常");
+		}
+	}
+
+	public Long getStoreuuid() {
+		return storeuuid;
+	}
+
+	public void setStoreuuid(Long storeuuid) {
+		this.storeuuid = storeuuid;
+	}
+
+}

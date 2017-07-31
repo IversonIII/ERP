@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cn.iverson.erp.exception&apos; to &apos;cn.iverson.erp.biz.exception&apos;&#x0D;&#x0A;- Original project: &apos;erp_biz&apos;&#x0D;&#x0A;- Original element: &apos;erp_biz/src/main/java/cn.iverson.erp.exception&apos;&#x0D;&#x0A;- Renamed element: &apos;erp_biz/src/main/java/cn.iverson.erp.biz.exception&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cn.iverson.erp.exception&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;cn.iverson.erp.exception" name="cn.iverson.erp.biz.exception" qualified="false" references="true" stamp="1500214319187" textual="false" version="1.0"/>
+</session>

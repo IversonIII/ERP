@@ -1,0 +1,13 @@
+package cn.iverson.erp.job;
+
+import cn.iverson.erp.biz.IStoredetailBiz;
+import cn.iverson.erp.utils.MailUtil;
+
+public class MailJob {
+	
+	private IStoredetailBiz storedetailBiz;
+	private MailUtil mailUtil;
+	private String to;
+	private String subject;
+	private String text;
+}

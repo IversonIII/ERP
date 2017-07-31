@@ -1,0 +1,2375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be8b6983-1d21-4f16-a256-dd23dfa1d66c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/AddWaybill.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/AddWaybillResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/ObjectFactory.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/Waybilldetail.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/WaybilldetailList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/WaybilldetailListResponse.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/IWaybillWs.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/WaybillWsService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/package-info.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/accordion_collapse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/accordion_expand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/button_a_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/button_plain_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/button_span_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/calendar_nextmonth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/calendar_nextyear.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/calendar_prevmonth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/calendar_prevyear.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/combo_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datagrid_header_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datagrid_row_collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datagrid_row_expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datagrid_sort_asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datagrid_sort_desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datagrid_title_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/layout_button_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/layout_button_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/layout_button_right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/layout_button_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/menu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/menu_downarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/menu_rightarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/menu_sep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/menu_split_downarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/messager_error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/messager_info.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/messager_question.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/messager_warning.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/pagination_first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/pagination_last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/pagination_load.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/pagination_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/pagination_next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/pagination_prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/panel_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/panel_title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/panel_tool_collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/panel_tool_expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/panel_tools.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/spinner_arrow_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/spinner_arrow_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tabs_active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tabs_close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tabs_enabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tabs_leftarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tabs_rightarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_checkbox_0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_checkbox_1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_checkbox_2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_dnd_no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_dnd_yes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_elbow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_folder_open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/tree_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/validatebox_pointer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/accordion_collapse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/accordion_expand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/button_a_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/button_plain_hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/button_span_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/calendar_nextmonth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/calendar_nextyear.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/calendar_prevmonth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/calendar_prevyear.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/combo_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datagrid_header_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datagrid_row_collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datagrid_row_expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datagrid_sort_asc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datagrid_sort_desc.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datagrid_title_bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/layout_button_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/layout_button_left.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/layout_button_right.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/layout_button_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/menu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/menu_downarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/menu_rightarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/menu_sep.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/menu_split_downarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/messager_error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/messager_info.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/messager_question.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/messager_warning.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/pagination_first.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/pagination_last.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/pagination_load.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/pagination_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/pagination_next.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/pagination_prev.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/panel_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/panel_title.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/panel_tool_collapse.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/panel_tool_expand.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/panel_tools.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/spinner_arrow_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/spinner_arrow_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tabs_close.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tabs_enabled.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tabs_leftarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tabs_rightarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_arrows.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_checkbox_0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_checkbox_1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_checkbox_2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_dnd_no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_dnd_yes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_elbow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_file.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_folder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_folder_open.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/tree_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/validatebox_pointer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/cancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/cut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/edit_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/edit_remove.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/filesave.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/mini_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/mini_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/mini_refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/pencil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/print.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/redo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/reload.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/sum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/tip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icons/undo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/CategorizeMenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/ShowCustomPropertiesPage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/TableDrawTable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/blocks.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/cloud.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/cloud.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/directory.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/erp.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/i1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/i2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/i3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/layout-browser-hd-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/login_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/nav_link.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/noscript.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/plugin_big.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/remember.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/shadow2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/tabicons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/tip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/tools-sprites-trans.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/images/unfold.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/accordion_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/calendar_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/combo_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/datagrid_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/layout_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/linkbutton_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/menu_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/messager_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/pagination_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/panel_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/spinner_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/tabs_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/tree_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/accordion_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/calendar_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/combo_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/datagrid_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/layout_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/linkbutton_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/menu_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/messager_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/pagination_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/panel_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/spinner_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/tabs_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/tree_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/accordion_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/calendar_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/combo_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/datagrid_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/layout_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/linkbutton_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/menu_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/messager_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/pagination_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/panel_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/spinner_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/tabs_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/tree_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/accordion_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/calendar_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/combo_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/datagrid_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/layout_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/linkbutton_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/menu_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/messager_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/pagination_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/panel_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/spinner_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/tabs_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/tree_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/Excel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/alert-red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/cancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/cut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/edit_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/edit_remove.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/filesave.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/filter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/mini_add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/mini_edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/mini_refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/no.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/pencil.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/print.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/redo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/reload.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/sum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/tip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icons/undo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/accordion_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/calendar_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/combo_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/datagrid_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/datebox_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/layout_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/linkbutton_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/menu_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/messager_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/pagination_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/panel_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/searchbox_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/slider_handle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/spinner_arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/tabs_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/tree_icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/images/validatebox_warning.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/erp_web_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/erp_web_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Iverson.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_1_37.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_11_2_0_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_10_b140310_1920.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_10_b140310_1920.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_core_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_soap_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_xml_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_databinding_jaxb_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_jaxws_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_simple_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_transports_http_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_addr_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_policy_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_wsdl_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_neethi_neethi_3_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_aspectj_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_core_2_3_24.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_spring_plugin_2_3_24.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_xwork_xwork_core_2_3_24.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ws_xmlschema_xmlschema_core_2_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_6_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_22.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_7_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.settings/org.eclipse.wst.common.component" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/.settings/org.eclipse.wst.validation.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/erp_biz.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IBaseBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IDepBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IEmpBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IGoodsBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IGoodstypeBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IInventoryBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IMenuBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IOrderdetailBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IOrdersBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IReportBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IReturnorderdetailBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IReturnordersBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IRoleBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IStoreBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IStoredetailBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IStoreoperBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/ISupplierBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/exception/ErpException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/BaseBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/DepBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/EmpBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/GoodsBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/GoodstypeBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/InventoryBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/MenuBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/OrderdetailBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/OrdersBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/ReportBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/ReturnorderdetailBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/ReturnordersBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/RoleBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/StoreBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/StoredetailBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/StoreoperBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/SupplierBiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/job/MailJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/utils/MailUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_biz.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_job.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_mail.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_tx.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/DepTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/EmpTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/GoodsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/GoodstypeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/InventoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/MenuTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/OrderdetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/OrdersTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/ReturnorderdetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/ReturnordersTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/RoleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/StoreTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/StoredetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/StoreoperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/java/cn/iverson/erp/test/SupplierTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_biz/src/test/resources/applicationContext_test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/erp_client.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/AddWaybill.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/AddWaybillResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/Waybilldetail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/WaybilldetailList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/WaybilldetailListResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/IWaybillWs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/WaybillWsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_client/src/main/resources/applicationContext_cxf.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.settings/org.eclipse.wst.common.component" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/.settings/org.eclipse.wst.validation.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/erp_dao.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IBaseDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IDepDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IEmpDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IGoodsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IGoodstypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IInventoryDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IMenuDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IOrderdetailDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IOrdersDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IReportDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IReturnorderdetailDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IReturnordersDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IRoleDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IStoreDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IStoredetailDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IStoreoperDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/ISupplierDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/BaseDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/DepDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/EmpDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/GoodsDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/GoodstypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/InventoryDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/MenuDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/OrderdetailDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/OrdersDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/ReportDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/ReturnorderdetailDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/ReturnordersDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/RoleDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/StoreDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/StoredetailDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/StoreoperDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/SupplierDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/resources/applicationContext_dao.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/main/resources/applicationContext_datasource.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/DepTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/EmpTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/GoodsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/GoodstypeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/InventoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/MenuTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/OrderdetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/OrdersTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/ReturnorderdetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/ReturnordersTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/RoleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/StoreTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/StoredetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/StoreoperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/java/cn/iverson/erp/test/SupplierTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_dao/src/test/resources/applicationContext_test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.settings/org.eclipse.wst.common.component" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/.settings/org.eclipse.wst.validation.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/erp_entity.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Dep.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Emp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Goods.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Goodstype.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Inventory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Menu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Orderdetail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Orders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Returnorderdetail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Returnorders.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Store.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Storealert.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Storedetail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Storeoper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Supplier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/dep.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/emp.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/goods.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/goodstype.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/inventory.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/menu.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/orderdetail.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/orders.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/returnorderdetail.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/returnorders.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/role.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/store.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/storealert.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/storedetail.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/storeoper.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/supplier.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_parent.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/.jsdtscope" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.m2e.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.wst.common.component" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.wst.jsdt.ui.superType.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.wst.jsdt.ui.superType.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/.settings/org.eclipse.wst.validation.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/erp_web.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/BaseAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/DepAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/EmpAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/GoodsAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/GoodstypeAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/InventoryAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/LoginAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/MenuAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/OrderdetailAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/OrdersAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/ReportAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/ReturnorderdetailAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/ReturnordersAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/RoleAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/StoreAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/StoredetailAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/StoreoperAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/SupplierAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/filter/ErpAuthorizationFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/realm/ErpRealm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_action.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_shiro.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/resources/struts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/jquery-1.7.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/jquery.easyui.1.2.6.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/default/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/gray/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/themes/icon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/css/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/css/table.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/dep.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/emp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/empRoleSet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/goods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/goodstype.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/inventory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/crud.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/date.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/empRoleSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/orders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/orders_add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/pwd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/report.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/report_trend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/request.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/roleMenuSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/storealert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/storedetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/js/storeoper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/json/year.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/orderdetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/orders.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/orders_add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/pwd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/report_order.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/report_trend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/returnorderdetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/returnorders.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/role.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/roleMenuSet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/store.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/storealert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/storedetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/storeoper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/supplier.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/download.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/easyloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/highcharts-3d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/highcharts-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/jquery.easyui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/jquery.serializejson.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-cz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-jp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-sv_SE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/locale/easyui-lang-zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/black/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/bootstrap/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/default/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/gray/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/icon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/accordion.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/combo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/combobox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/datagrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/datebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/easyui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/layout.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/linkbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/menubutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/messager.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/panel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/progressbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/propertygrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/searchbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/slider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/splitbutton.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/tree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/validatebox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/main/webapp/ui/themes/metro/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/DepTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/EmpTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/GoodsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/GoodstypeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/InventoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/MenuTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/OrderdetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/OrdersTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/ReturnorderdetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/ReturnordersTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/RoleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/StoreTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/StoredetailTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/StoreoperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/java/cn/iverson/erp/test/SupplierTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erp_web/src/test/resources/applicationContext_test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/erp_dao/target/" />
+    <ignored path="$PROJECT_DIR$/erp_biz/target/" />
+    <ignored path="$PROJECT_DIR$/erp_web/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/erp_entity/target/" />
+    <ignored path="$PROJECT_DIR$/erp_client/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErpAuthorizationFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/filter/ErpAuthorizationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/LoginAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/BaseAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="167" column="63" lean-forward="true" selection-start-line="167" selection-start-column="63" selection-end-line="167" selection-end-column="63" />
+              <folding>
+                <element signature="e#3241#3242#0" expanded="true" />
+                <element signature="e#3302#3303#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext_action.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_action.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErpRealm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/realm/ErpRealm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2455#2456#0" expanded="true" />
+                <element signature="e#2493#2494#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext_shiro.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_shiro.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&gt;&lt;/property&gt;</find>
+      <find>waybillsn</find>
+      <find>json</find>
+      <find>url</find>
+      <find>shiro</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/&gt;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/ISupplierBiz.java" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Supplier.java" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/SupplierBiz.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/supplier.html" />
+        <option value="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/SupplierDao.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/SupplierAction.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/js/crud.js" />
+        <option value="$PROJECT_DIR$/erp_client/pom.xml" />
+        <option value="$PROJECT_DIR$/erp_client/src/main/resources/applicationContext_cxf.xml" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_job.xml" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_mail.xml" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/OrderdetailBiz.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/orders.html" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/js/orders.js" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/orders.hbm.xml" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/orderdetail.hbm.xml" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/OrdersAction.java" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Tree.java" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Role.java" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IRoleBiz.java" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/RoleBiz.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/RoleAction.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/js/roleMenuSet.js" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IEmpBiz.java" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_biz.xml" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/EmpBiz.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/EmpAction.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/roleMenuSet.html" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/empRoleSet.html" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/js/empRoleSet.js" />
+        <option value="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IMenuDao.java" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IMenuBiz.java" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Emp.java" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/menu.hbm.xml" />
+        <option value="$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/MenuBiz.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/MenuAction.java" />
+        <option value="$PROJECT_DIR$/erp_dao/src/main/resources/applicationContext_datasource.xml" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/emp.hbm.xml" />
+        <option value="$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/MenuDao.java" />
+        <option value="$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/role.hbm.xml" />
+        <option value="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.3/shiro-core-1.2.3.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.class" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_action.xml" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/LoginAction.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/BaseAction.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/realm/ErpRealm.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/filter/ErpAuthorizationFilter.java" />
+        <option value="$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_shiro.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/ItheimaApp/Maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\ItheimaApp\Maven\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1374" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JBoss Seam issues</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JavaDoc</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../123" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IDEA\Maven\ERP\erp_parent\erp_web\src\main\webapp" />
+      <recent name="F:\IDEA\Maven\ERP\erp_parent\erp_web\src\main\resources" />
+      <recent name="F:\IDEA\Maven\ERP\erp_parent\erp_client\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.ERP">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="erp_dao" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="ERP" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="erp_web:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_erp_parent_2" />
+        <option name="JNDI_PORT" value="1098" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="11822" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="erp_web:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.ERP" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be8b6983-1d21-4f16-a256-dd23dfa1d66c" name="Default" comment="" />
+      <created>1501078582808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1501078582808</updated>
+      <workItem from="1501078586170" duration="5356000" />
+      <workItem from="1501114479276" duration="150000" />
+      <workItem from="1501114716959" duration="6337000" />
+      <workItem from="1501132406744" duration="1301000" />
+      <workItem from="1501137773332" duration="5680000" />
+      <workItem from="1501157601544" duration="571000" />
+      <workItem from="1501158229442" duration="9192000" />
+      <workItem from="1501205648823" duration="19958000" />
+      <workItem from="1501291035727" duration="1341000" />
+      <workItem from="1501310927092" duration="20424000" />
+      <workItem from="1501337034717" duration="1687000" />
+      <workItem from="1501339287411" duration="3736000" />
+      <workItem from="1501400138692" duration="4859000" />
+      <workItem from="1501405616725" duration="8795000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="89387000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1374" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.00311042" sideWeight="0.49707174" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5387097" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25310558" sideWeight="0.49707174" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37741935" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23903178" sideWeight="0.84219" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25113463" sideWeight="0.15780999" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29516128" sideWeight="0.49546143" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5387097" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25310558" sideWeight="0.49707174" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29516128" sideWeight="0.49546143" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.00311042" sideWeight="0.49707174" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37741935" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23903178" sideWeight="0.84219" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25113463" sideWeight="0.15780999" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="65" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="hql" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/js/orders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6854">
+          <caret line="298" column="55" lean-forward="false" selection-start-line="298" selection-start-column="51" selection-end-line="298" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/IWaybillWs.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/WaybillWsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_client/src/main/java/cn/iverson/bos/ws/impl/IWaybillWs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/OrdersAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/OrdersBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="280" column="32" lean-forward="false" selection-start-line="280" selection-start-column="32" selection-end-line="280" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IRoleBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/RoleBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="991">
+          <caret line="75" column="23" lean-forward="false" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/EmpBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="80" column="20" lean-forward="false" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/empRoleSet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/roleMenuSet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/js/roleMenuSet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/js/empRoleSet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IEmpBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/RoleAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/IMenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_dao/src/main/resources/applicationContext_dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_72/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="674" column="23" lean-forward="false" selection-start-line="674" selection-start-column="23" selection-end-line="674" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Emp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1314">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/EmpDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-992">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/emp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/menu.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_dao/src/main/resources/applicationContext_datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_dao/src/main/java/cn/iverson/erp/dao/impl/MenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/java/cn/iverson/erp/entity/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/MenuAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/role.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_entity/src/main/resources/cn/iverson/erp/entity/emp.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/EmpAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-953">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/impl/MenuBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_client/src/main/resources/applicationContext_cxf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/resources/applicationContext_biz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.3/shiro-core-1.2.3.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/adminjs/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_biz/src/main/java/cn/iverson/erp/biz/IMenuBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/BaseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="167" column="63" lean-forward="true" selection-start-line="167" selection-start-column="63" selection-end-line="167" selection-end-column="63" />
+          <folding>
+            <element signature="e#3241#3242#0" expanded="true" />
+            <element signature="e#3302#3303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/realm/ErpRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+            <element signature="e#2493#2494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_action.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/resources/applicationContext_shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="85" column="48" lean-forward="true" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp_web/src/main/java/cn/iverson/erp/filter/ErpAuthorizationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>erp_web:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Struts 2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate|erp_parent</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+package cn.iverson.erp.dao.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import cn.iverson.erp.dao.IReportDao;
+
+public class ReportDao implements IReportDao {
+
+	@Override
+	public List orderReport(Date startDate, Date endDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

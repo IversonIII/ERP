@@ -1,0 +1,36 @@
+package cn.iverson.erp.action;
+import javax.servlet.http.HttpServletResponse;
+
+import cn.iverson.erp.biz.ISupplierBiz;
+import cn.iverson.erp.entity.Supplier;
+
+/**
+ * 供应商Action 
+ * @author Administrator
+ *
+ */
+public class SupplierAction extends BaseAction<Supplier> {
+
+	private ISupplierBiz supplierBiz;
+
+	public void setSupplierBiz(ISupplierBiz supplierBiz) {
+		this.supplierBiz = supplierBiz;
+		super.setBaseBiz(this.supplierBiz);
+	}
+	
+	/**
+	 * 导出供应商列表/客户表
+	 */
+	public void export(){
+		String fileName = "";
+		//据类型生成文件名
+		if((getT1().getType()).equals("1")){
+			fileName = "供应商.xls";
+		}
+		if(super.getT1().getType().equals("2")){
+			fileName ="客户.xls";
+		}
+		//转码
+		HttpServletResponse response = HttpServletResponse
+	}
+}

@@ -1,0 +1,136 @@
+package cn.iverson.erp.biz.impl;
+import java.util.Date;
+import java.util.List;
+
+import cn.iverson.erp.biz.IOrderdetailBiz;
+import cn.iverson.erp.biz.exception.ErpException;
+import cn.iverson.erp.dao.IOrderdetailDao;
+import cn.iverson.erp.dao.IStoredetailDao;
+import cn.iverson.erp.dao.IStoreoperDao;
+import cn.iverson.erp.entity.Orderdetail;
+import cn.iverson.erp.entity.Orders;
+import cn.iverson.erp.entity.Storedetail;
+import cn.iverson.erp.entity.Storeoper;
+/**
+ * 订单明细业务逻辑类
+ * @author Administrator
+ *
+ */
+public class OrderdetailBiz extends BaseBiz<Orderdetail> implements IOrderdetailBiz {
+
+	private IOrderdetailDao orderdetailDao;
+	private IStoredetailDao storedetailDao;
+	private IStoreoperDao storeoperDao;
+	
+	public void setOrderdetailDao(IOrderdetailDao orderdetailDao) {
+		this.orderdetailDao = orderdetailDao;
+		super.setBaseDao(this.orderdetailDao);
+	}
+
+	@Override
+	public void doInStore(Long uuid, Long storeUuid, Long empUuid) {
+		//1.更新商品明细
+		Orderdetail orderdetail = this.orderdetailDao.get(uuid);
+		//判断状态     是否已经入库
+		if(!(Orderdetail.STATE_NOT_IN.equals(orderdetail.getState()))){
+			throw new ErpException("该明细已经入库了");
+		}
+		//更新状态
+		orderdetail.setState(Orderdetail.STATE_IN);
+		//加入操作人
+		orderdetail.setEnder(empUuid);
+		//入到?仓库
+		orderdetail.setStoreuuid(storeUuid);
+		//加入时间
+		orderdetail.setEndtime(new Date());
+		
+		//2.更新商品仓库库存
+		Storedetail storeDetail = new Storedetail();
+		//设置商品编号
+		storeDetail.setGoodsuuid(orderdetail.getGoodsuuid());
+		//保存仓库编号
+		storeDetail.setStoreuuid(storeUuid);
+		List<Storedetail> storeList = storedetailDao.getList(storeDetail, null, null);
+		//判断是否存在库存信息
+		if(null != storeList && storeList.size()>0){
+			storeList.get(0).setNum(storeList.get(0).getNum());
+		}else{
+			//不存在的话就增加库存信息
+			storedetailDao.add(storeDetail);
+		}
+		
+		//3.增加商品仓库库存更新记录
+		Storeoper storeoper = new Storeoper();
+		//设置操作人
+		storeoper.setEmpuuid(empUuid);
+		//入库商品编号
+		storeoper.setGoodsuuid(orderdetail.getGoodsuuid());
+		//数量==>入库
+		storeoper.setNum(orderdetail.getNum());
+		//时间==>入库
+		storeoper.setOpertime(orderdetail.getEndtime());
+		//入的哪个仓库
+		storeoper.setStoreuuid(storeUuid);
+		//状态
+		storeoper.setType(Storeoper.TYPE_IN);
+		storeoperDao.add(storeoper);
+		
+		//4.是否需要更新订单状态的判断
+		//订单信息
+		Orders orders = orderdetail.getOrders();
+		//构建查询条件,统计订单中State=0的明细的个数
+		Orderdetail countP = new Orderdetail();
+		countP.setState(Orderdetail.STATE_NOT_IN);
+		countP.setOrders(orders);
+		Long count = orderdetailDao.getCount(countP, null, null);
+		if(count == 0){
+			//更新状态
+			orders.setState(Orders.STATE_END);
+			//设置操作人
+			orders.setEnder(empUuid);
+			//设置操作时间
+			orders.setEndtime(orderdetail.getEndtime());
+		}
+		
+	}
+	
+	public void doOutStore(Long uuid, Long storeUuid, Long empUuid){
+		//1,获取订单明细
+		Orderdetail orderdetail = orderdetailDao.get(uuid);
+		//判断状态,若未出库才执行
+		if(!(orderdetail.getState().equals(Orderdetail.STATE_NOT_OUT))){
+			throw new ErpException("该明细已经出库了,不能重复操作");
+		}
+		//更新订单的明细
+		orderdetail.setEnder(empUuid);
+		orderdetail.setEndtime(new Date());
+		orderdetail.setState(Orderdetail.STATE_OUT);
+		orderdetail.setStoreuuid(storeUuid);
+		
+		//2,更新商品仓库库存
+		Storedetail storedetail = new Storedetail();
+		storedetail.setGoodsuuid(orderdetail.getGoodsuuid());
+		//storedetail.setNum(num);
+		storedetail.setStoreuuid(storeUuid);
+		List<Storedetail> storedetailList = storedetailDao.getList(storedetail, null, null);
+		Long num = -1L;
+		if(null != storedetailList && storedetailList.size()>0){
+			storedetail = storedetailList.get(0);
+			num = storedetail.getNum().longValue() - orderdetail.getNum().longValue();
+		}
+		if(num>0){//库存充足
+			storedetail.setNum(num);
+		}else{//不足,温馨提示
+			
+		}
+	}
+
+	public void setStoredetailDao(IStoredetailDao storedetailDao) {
+		this.storedetailDao = storedetailDao;
+	}
+
+	public void setStoreoperDao(IStoreoperDao storeoperDao) {
+		this.storeoperDao = storeoperDao;
+	}
+	
+}

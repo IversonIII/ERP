@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login.html" />
+		<property name="filters">
+			<map>
+				<entry key="perms" value-ref="erpFilter"/>
+			</map>
+		</property>
+		<property name="unauthorizedUrl" value="/error.html" />
+		<property name="filterChainDefinitions">
+			<value>
+				/error.html = anon
+				/login_*.action=anon
+
+				/emp_updatePwd.action= perms[]
+				/*_get.action=perms[]
+				/*_list.action=perms[]
+				/*_listByPage.action=perms[]
+				/pwd.html=perms["重置密码"]
+				/emp_updatePwd_reset.action=perms["重置密码"]
+
+				/orders.html= perms["采购申请","采购订单查询","采购审核","采购确认","采购入库","销售订单录入","销售订单查询","销售订单出库"]
+				/orders_add.action= perms["采购申请","销售订单录入"]
+				/orders_doCheck.action=perms["采购审核"]
+				/orders_doStart.action=perms["采购确认"]
+				/store_mylist.action= perms["采购入库","销售订单出库"]
+				/orderdetail_doInStore.action=perms["采购入库"]
+				/orderdetail_doOutStore.action=perms["销售订单出库"]
+
+				/storedetail.html= perms["库存查询"]
+				/storeoper.html= perms["库存变动记录"]
+
+				/report_orders.html= perms["销售统计表"]
+				/report_order*.action= perms["销售统计表"]
+
+				/report_trend.html= perms["销售趋势分析"]
+				/report_trend*.action= perms["销售趋势分析"]
+
+				/roleMenuSet.html=perms["角色权限设置"]
+				/role_readRoleMenus.action=perms["角色权限设置"]
+				/role_updateRoleMenus.action=perms["角色权限设置"]
+
+				/empRoleSet.html=perms["用户角色设置"]
+				/emp_readEmpRoles.action=perms["用户角色设置"]
+				/emp_updateEmpRoles.action=perms["用户角色设置"]
+
+				/role.html= perms["角色设置"]
+				/role_*.action= perms["角色设置"]
+
+				/goodstype.html= perms["商品类型"]
+				/goodstype_*.action= perms["商品类型"]
+
+				/goods.html= perms["商品"]
+				/goods_*.action= perms["商品"]
+
+				/supplier.html = perms["供应商","客户"]
+				/supplier_*.action = perms["供应商","客户"]
+
+				/store.html= perms["仓库"]
+				/store_*.action= perms["仓库"]
+
+				/emp.html= perms["员工"]
+				/emp_*.action= perms["员工"]
+
+				/dep.html= perms["部门"]
+				/dep_*.action= perms["部门"]
+
+				/*.html = authc
+				/*.action = authc
+				/* = authc
+			</value>
+		</property>
+	</bean>
+	<!-- 安全管理器,核心组件 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="erpRealm"/>
+	</bean>
+
+	<bean id="erpRealm" class="cn.iverson.erp.realm.ErpRealm">
+		<property name="empBiz" ref="empBiz"/>
+		<property name="menuBiz" ref="menuBiz"/>
+	</bean>
+	<bean id="erpFilter" class="cn.iverson.erp.filter.ErpAuthorizationFilter">
+
+	</bean>
+</beans>

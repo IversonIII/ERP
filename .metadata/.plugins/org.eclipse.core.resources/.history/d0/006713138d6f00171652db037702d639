@@ -1,0 +1,9 @@
+package cn.iverson.erp.action;
+
+import java.util.Date;
+
+public class ReportAction {
+	private Date startDate;
+	private Date endDate;
+	private IReportBiz reportBiz;
+}

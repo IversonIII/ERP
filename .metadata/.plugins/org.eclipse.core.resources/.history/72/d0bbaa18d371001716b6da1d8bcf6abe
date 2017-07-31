@@ -1,0 +1,63 @@
+package cn.iverson.erp.biz.impl;
+import java.io.OutputStream;
+import java.util.List;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import cn.iverson.erp.biz.ISupplierBiz;
+import cn.iverson.erp.dao.ISupplierDao;
+import cn.iverson.erp.entity.Supplier;
+/**
+ * 供应商业务逻辑类
+ * @author Administrator
+ *
+ */
+public class SupplierBiz extends BaseBiz<Supplier> implements ISupplierBiz {
+
+	private ISupplierDao supplierDao;
+	
+	public void setSupplierDao(ISupplierDao supplierDao) {
+		this.supplierDao = supplierDao;
+		super.setBaseDao(this.supplierDao);
+	}
+
+	/**
+	 * 导出供应商列表/客户表
+	 */
+	@Override
+	public void export(OutputStream os, Supplier t1) {
+		//获取供应商列表/客户表
+		List<Supplier> supplierList = super.getList(t1, null, null);
+		//创建execl表格
+		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+		HSSFSheet hssfSheet = null;
+		//根据type的值来设置工作表的名称
+		if(t1.getType().equals("1")){
+			hssfSheet = hssfWorkbook.createSheet("供应商");
+		}
+		if(t1.getType().equals("2")){
+			hssfSheet = hssfWorkbook.createSheet("客户");
+		}
+		//创建表头
+		HSSFRow hssfRow = hssfSheet.createRow(0);
+		//定义每一列的标题(用数组来存值,省步奏,用循环即可取值)
+		String [] headerName = {"名称","地址","联系人","电话","E-mail"};
+		//设置每一列的宽度
+		int [] columnWidths = {4000,8000,2000,3000,8000};
+		HSSFCell hssfCell = null;
+		for(int i = 0;i<headerName.length;i++){
+			hssfCell = hssfRow.createCell(i);
+			hssfCell.setCellValue(headerName[i]);
+			hssfSheet.setColumnWidth(i,columnWidths[i]);
+		}
+		//写入内容
+		int i = 0;
+		for(Supplier supplier:supplierList){
+			
+		}
+	}
+	
+}

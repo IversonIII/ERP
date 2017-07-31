@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		">
+	
+	<!-- 部门 -->
+	<bean id="depAction" class="cn.iverson.erp.action.DepAction" scope="prototype">
+		<property name="depBiz" ref="depBiz"/>
+	</bean>
+	<!-- 员工 -->
+	<bean id="empAction" class="cn.iverson.erp.action.EmpAction" scope="prototype">
+		<property name="empBiz" ref="empBiz"/>
+	</bean>
+	<!-- 商品 -->
+	<bean id="goodsAction" class="cn.iverson.erp.action.GoodsAction" scope="prototype">
+		<property name="goodsBiz" ref="goodsBiz"/>
+	</bean>
+	<!-- 商品分类 -->
+	<bean id="goodstypeAction" class="cn.iverson.erp.action.GoodstypeAction" scope="prototype">
+		<property name="goodstypeBiz" ref="goodstypeBiz"/>
+	</bean>
+	<!-- 盘盈盘亏 -->
+	<bean id="inventoryAction" class="cn.iverson.erp.action.InventoryAction" scope="prototype">
+		<property name="inventoryBiz" ref="inventoryBiz"/>
+	</bean>
+	<!-- 菜单 -->
+	<bean id="menuAction" class="cn.iverson.erp.action.MenuAction" scope="prototype">
+		<property name="menuBiz" ref="menuBiz"/>
+	</bean>
+	<!-- 订单明细 -->
+	<bean id="orderdetailAction" class="cn.iverson.erp.action.OrderdetailAction" scope="prototype">
+		<property name="orderdetailBiz" ref="orderdetailBiz"/>
+	</bean>
+	<!-- 订单 -->
+	<bean id="ordersAction" class="cn.iverson.erp.action.OrdersAction" scope="prototype">
+		<property name="ordersBiz" ref="ordersBiz"/>
+		<property name="waybillWs" ref="waybillClient"/>
+	</bean>
+	<!-- 退货订单明细 -->
+	<bean id="returnorderdetailAction" class="cn.iverson.erp.action.ReturnorderdetailAction" scope="prototype">
+		<property name="returnorderdetailBiz" ref="returnorderdetailBiz"/>
+	</bean>
+	<!-- 退货订单 -->
+	<bean id="returnordersAction" class="cn.iverson.erp.action.ReturnordersAction" scope="prototype">
+		<property name="returnordersBiz" ref="returnordersBiz"/>
+	</bean>
+	<!-- 角色 -->
+	<bean id="roleAction" class="cn.iverson.erp.action.RoleAction" scope="prototype">
+		<property name="roleBiz" ref="roleBiz"/>
+	</bean>
+	<!-- 仓库 -->
+	<bean id="storeAction" class="cn.iverson.erp.action.StoreAction" scope="prototype">
+		<property name="storeBiz" ref="storeBiz"/>
+	</bean>
+	<!-- 仓库库存 -->
+	<bean id="storedetailAction" class="cn.iverson.erp.action.StoredetailAction" scope="prototype">
+		<property name="storedetailBiz" ref="storedetailBiz"/>
+	</bean>
+	<!-- 仓库操作记录 -->
+	<bean id="storeoperAction" class="cn.iverson.erp.action.StoreoperAction" scope="prototype">
+		<property name="storeoperBiz" ref="storeoperBiz"/>
+	</bean>
+	<!-- 供应商 -->
+	<bean id="supplierAction" class="cn.iverson.erp.action.SupplierAction" scope="prototype">
+		<property name="supplierBiz" ref="supplierBiz"/>
+	</bean>
+	<!-- 登录 -->
+	<bean id="loginAction" class="cn.iverson.erp.action.LoginAction" scope="prototype">
+
+	</bean>
+	<!-- 报表统计 -->
+	<bean id="reportAction" class="cn.iverson.erp.action.ReportAction" scope="prototype">
+		<property name="reportBiz" ref="reportBiz"/>
+	</bean>
+
+
+</beans>
+	

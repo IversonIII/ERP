@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>销售统计</title>
+<link rel="stylesheet" type="text/css" href="ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="ui/themes/icon.css">
+<script type="text/javascript" src="ui/jquery.min.js"></script>
+<script type="text/javascript" src="ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="ui/jquery.serializejson.min.js"></script>
+<script type="text/javascript" src="js/report.js"></script>
+</head>
+<body>
+	<form id="searchForm">
+			操作员：<input name="t1.empuuid" class="easyui-combobox" data-options="
+																			url:'emp_list',
+																			valueField:'uuid',
+																			textField:'name'
+																				">
+			日期：<input name="t1.opertime" id="t1opername" class="easyui-datebox">=>
+				<input name="t2.opertime" id="t2opername" class="easyui-datebox">
+			仓库：<input name="t1.storeuuid" class="easyui-combobox" data-options="
+																			url:'store_list',
+																			valueField:'uuid',
+																			textField:'name'
+																				">
+			商品：<input name="t1.goodsuuid" class="easyui-combobox" data-options="
+																			url:'goods_list',
+																			valueField:'uuid',
+																			textField:'name'
+																				">
+			操作：<input name="t1.type" class="easyui-combobox" data-options="
+									data:[{name:'所有',uuid:''},{name:'入库',uuid:1},{name:'出库',uuid:2}],
+									valueField:'uuid',
+									textField:'name'
+													">
+
+		<button type="button" id="btnSearch">查询</button>
+	</form>
+	<div style="height:2px;"></div>
+<table id="grid"></table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+package cn.iverson.erp.action;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+
+import cn.iverson.erp.biz.ISupplierBiz;
+import cn.iverson.erp.entity.Supplier;
+
+/**
+ * 供应商Action 
+ * @author Administrator
+ *
+ */
+public class SupplierAction extends BaseAction<Supplier> {
+
+	private ISupplierBiz supplierBiz;
+
+	public void setSupplierBiz(ISupplierBiz supplierBiz) {
+		this.supplierBiz = supplierBiz;
+		super.setBaseBiz(this.supplierBiz);
+	}
+	
+	/**
+	 * 导出供应商列表/客户表
+	 */
+	public void export(){
+		String fileName = "";
+		//据类型生成文件名
+		if((getT1().getType()).equals("1")){
+			fileName = "供应商.xls";
+		}
+		if(super.getT1().getType().equals("2")){
+			fileName ="客户.xls";
+		}
+		//转码
+		HttpServletResponse response = ServletActionContext.getResponse();
+		try {
+			response.setHeader("Content-Disposition", "attachment;fileName=" + 
+					new String(fileName.getBytes(),"ISO-8859-1"));
+			supplierBiz.export(response.getOutputStream(), getT1());
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} catch (IOException)
+	}
+}

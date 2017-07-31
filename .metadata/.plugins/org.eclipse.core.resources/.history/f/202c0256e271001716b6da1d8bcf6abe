@@ -1,0 +1,51 @@
+package cn.iverson.poi;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.util.CellRangeAddress;
+
+public class CreateOrderXls {
+
+	/**
+	 * 创建订单表格模板
+	 * @param args
+	 * @throws IOException 
+	 * @throws FileNotFoundException 
+	 */
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) throws Exception {
+		//工作簿
+		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+		//表
+		HSSFSheet hssfSheet = hssfWorkbook.createSheet("采购订单");
+		//内容样式
+		HSSFCellStyle hssfCellStyle = hssfWorkbook.createCellStyle();
+		hssfCellStyle.setBorderBottom(HSSFCellStyle.BORDER_THIN);//下边框
+		hssfCellStyle.setBorderTop(HSSFCellStyle.BORDER_THIN);//上边框
+		hssfCellStyle.setBorderLeft(HSSFCellStyle.BORDER_THIN);//左边框
+		hssfCellStyle.setBorderRight(HSSFCellStyle.BORDER_THIN);//右边框
+		for(int i = 2;i < 12;i++){
+			HSSFRow hssfRow = hssfSheet.createRow(i);
+			for(int j = 0;j < 4;j++){
+				HSSFCell hssfCell = hssfRow.createCell(j);
+				hssfCell.setCellStyle(hssfCellStyle);
+			}
+		}
+		//合并单元格
+		hssfSheet.addMergedRegion(new CellRangeAddress(0,0,0,3));//标题
+		hssfSheet.addMergedRegion(new CellRangeAddress(2,2,1,3));//供应商
+		hssfSheet.addMergedRegion(new CellRangeAddress(7,7,0,3));//订单明细
+		//设置各个单元格的内容
+		//保存工作簿Dao"f:\\采购订单.xls"
+		hssfWorkbook.write(new FileOutputStream("f:\\采购订单.xls"));
+		hssfWorkbook.close();
+	}
+
+}

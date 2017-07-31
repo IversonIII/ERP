@@ -1,0 +1,6 @@
+package cn.iverson.erp.utils;
+
+public class MailUtil {
+	
+	private JavaMailSender javaMailSender;
+}

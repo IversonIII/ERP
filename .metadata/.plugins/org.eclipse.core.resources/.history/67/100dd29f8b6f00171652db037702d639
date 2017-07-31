@@ -1,0 +1,5 @@
+package cn.iverson.erp.dao.impl;
+
+public class IReportDao {
+
+}
